@@ -1,0 +1,143 @@
+@import './variables';
+@import './loader';
+@import './header';
+@import './hero';
+@import './footer';
+@import './notFound';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+    @media (max-width: 575.98px) {
+        font-size: 12px;
+    }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        font-size: 12px;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        font-size: 12px;
+    }
+    @media (min-width: 1300px) and (max-width: 1531.98px){
+        font-size: 12px;
+    }
+    @media (min-width: 1532px) and (max-width: 1600px){
+        font-size: 12px;
+    }
+    @media (min-width: 2500px) {
+        font-size: 22px;
+    }
+    @media (max-width: 320px) {
+        font-size: 9px;
+    }
+    @media (min-width: 321px) and (max-width: 376px) {
+        font-size: 10px;
+    }  
+}
+
+body {
+    font-family: $ff1;
+    background-color: $black;
+    color: $white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all 0.3s ease-in-out;
+}
+
+main{
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0.1875rem;
+    height: 0.1875rem;
+    border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 0.625rem;
+    border-radius: 0.625rem;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 0.625rem;
+    border-radius: 0.625rem;
+    background: $green;
+}
+::-webkit-scrollbar-thumb:window-inactive {
+    background: $green;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	margin:0;
+	padding:0;
+    font-weight: 400;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+ul{
+	margin: 0;
+	padding:0;
+	list-style: none;
+}
+
+a{
+	margin:0;
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+a, select , input , textarea , button{
+	outline: none !important;
+}
+
+.btn:focus, .btn.focus, .form-control:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.btn-link:focus, .btn-link.focus {
+    text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+    @media (max-width: 575.98px) {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        width: 80%;
+        margin: 0 auto;
+    }
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        max-width: 720px;
+    }
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+            max-width: 960px;
+    }
+    @media (min-width: 1200px) and (max-width: 1299.98px) {
+        max-width: 95rem;
+    }
+    
+    @media (min-width: 1300px) and (max-width: 1398.98px){
+        max-width: 105rem;
+    }
+    @media (min-width: 1400px){
+        max-width: 115rem;
+    }
+}

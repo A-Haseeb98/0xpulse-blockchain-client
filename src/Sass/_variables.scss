@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --lagoon: rgba(255,255,255,0.9);
+    --green: #58C52A;
+    --black: #111111;
+}
+
+$white: var(--white);
+$lagoon: var(--lagoon);
+$green: var(--green);
+$black: var(--black);
+
+$ff1: 'Inter', sans-serif;
+$ff2: 'PT Mono', monospace;
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexBetween {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin bgCover {
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+  

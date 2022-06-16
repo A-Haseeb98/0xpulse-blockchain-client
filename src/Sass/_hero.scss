@@ -1,0 +1,10 @@
+.heroBg{
+    background: $black;
+    @include bgCover;
+    min-height: 36rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    position: relative;
+    margin-top: 5.5rem;
+}
