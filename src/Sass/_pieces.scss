@@ -42,6 +42,10 @@
                 @media (min-width: 992px) and (max-width: 1299.98px) {
                     font-size: 8rem;
                 }
+                @media (min-width: 1700px){
+                    font-size: 10rem;
+                    line-height: 9rem;
+                }
                 span{
                     text-transform: lowercase;
                     font-family: $ff2;
@@ -83,6 +87,10 @@
                 @media (min-width: 992px) and (max-width: 1299.98px) {
                     font-size: 8rem;
                 }
+                @media (min-width: 1700px){
+                    font-size: 10rem;
+                    line-height: 9rem;
+                }
             }
             &__tag{
                 @media (max-width: 575.98px) {
@@ -96,6 +104,10 @@
                     line-height: 2rem;
                     @media (max-width: 575.98px) {
                         line-height: 1.75rem;
+                    }
+                    @media (min-width: 1700px){
+                        font-size: 1.25rem;
+                        line-height: 2.25rem;
                     }
                     span{
                         color: $green;
@@ -114,6 +126,9 @@
         &__single{
             width: 19rem;
             margin-bottom: 3rem;
+            @media (min-width: 1700px){
+                width: 25rem;
+            }
             @media (max-width: 575.98px) {
                 width: 90%;
                 margin: 0 auto;
@@ -129,15 +144,15 @@
                 font-family: $ff2;
                 font-size: 1.25rem;
                 color: $green;
+                @media (min-width: 1700px){
+                    font-size: 1.5rem;
+                }
             }
             .heartbit{
                 display: block;
                 width: 100%;
                 height: auto;
                 margin: 0.75rem 0;
-                @media (max-width: 575.98px) {
-                    
-                }
                 @media (min-width: 576px) and (max-width: 991.98px) {
                     width: 100%;
                 }
@@ -148,11 +163,17 @@
                     position: relative;
                     p{
                         font-size: 1rem;
+                        @media (min-width: 1700px){
+                            font-size: 1.25rem;
+                        }
                     }
                     a{
                         text-transform: uppercase;
                         font-size: 0.875rem;
                         color: $white;
+                        @media (min-width: 1700px){
+                            font-size: 1rem;
+                        }
                         img{
                             width: 0.65rem;
                             height: 0.65rem;

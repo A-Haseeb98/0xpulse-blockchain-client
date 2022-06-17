@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import licence from '../Image/licence.png';
 import useWindowSize from '../Utilities/Hooks/useWindowSize';
 
@@ -32,8 +33,8 @@ const Footer = () => {
                         }
                         
                         <ul>
-                            <li><a href="#terms-conditions">Terms & Conditions</a></li>
-                            <li><a href="#privacy-policy">Privacy Policy</a></li>
+                            <li><Link to="/terms-conditions">Terms & Conditions</Link></li>
+                            <li><Link to="/privacy-policy">Privacy Policy</Link></li>
                         </ul>
                     </div>
                 </div>

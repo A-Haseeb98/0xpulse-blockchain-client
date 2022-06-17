@@ -1,7 +1,10 @@
 .why{
     position: relative;
-    min-height: 56rem;
     overflow: hidden;
+    padding-bottom: 3rem;
+    @media (min-width: 1700px){
+        padding-bottom: 7rem;
+    }
     .wrapper{
         @media (max-width: 575.98px) {
             width: 100%;
@@ -55,6 +58,10 @@
                 font-size: 6rem;
                 line-height: 6rem;
             }
+            @media (min-width: 1700px){
+                font-size: 10rem;
+                line-height: 9rem;
+            }
             span{
                 display: block;
                 color: $green;
@@ -89,6 +96,12 @@
                 }
                 @media (min-width: 992px) and (max-width: 1299.98px) {
                     top: 13rem;
+                }
+                @media (min-width: 1700px){
+                    top: 16rem;
+                    left: -3rem;
+                    width: 25rem;
+                    height: 13rem;
                 }
             }
         }
@@ -133,6 +146,10 @@
                 font-family: $ff2;
                 color: $lagoon;
                 line-height: 1.5rem;
+                @media (min-width: 1700px){
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
             }
         }
         &__right{
@@ -145,11 +162,18 @@
                 padding-left: 12.5rem;
                 padding-top: 1.75rem;
             }
+            @media (min-width: 1700px){
+                width: 28rem;
+            }
             p{
                 font-size: 1rem;
                 font-family: $ff2;
                 color: $lagoon;
                 line-height: 1.5rem;
+                @media (min-width: 1700px){
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
             }
         }
     }
