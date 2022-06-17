@@ -1,6 +1,6 @@
 .pieces{
     position: relative;
-    padding-bottom: 5rem;
+    padding-bottom: 3rem;
     overflow: hidden;
     .wrapper{
         @media (max-width: 575.98px) {
@@ -8,96 +8,186 @@
         }
     }
     &__upper{
-        position: relative;
-        @include flexCenter;
-        align-items: flex-end;
-        padding: 7rem 0 0 0;
-        @media (max-width: 575.98px) {
-            width: 90%;
-            margin: 0 auto;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 4rem 0 0 0;
-        }
-        h2{
-            text-transform: uppercase;
-            font-size: 9rem;
-            color: $green;
-            line-height: 8rem;
+        &__title{
+            position: relative;
+            @include flexCenter;
+            align-items: flex-end;
+            padding: 7rem 0 0 0;
             @media (max-width: 575.98px) {
-                font-size: 2.75rem;
-                line-height: 3rem;
+                width: 90%;
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 4rem 0 0 0;
             }
-            @media (max-width: 320px) {
-                font-size: 2.25rem;
+            h2{
+                text-transform: uppercase;
+                font-size: 8rem;
+                color: $green;
+                line-height: 8rem;
+                @media (max-width: 575.98px) {
+                    font-size: 2.75rem;
+                    line-height: 3rem;
+                }
+                @media (max-width: 320px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    font-size: 6rem;
+                    line-height: 6rem;
+                }
+                @media (min-width: 992px) and (max-width: 1299.98px) {
+                    font-size: 8rem;
+                }
+                span{
+                    text-transform: lowercase;
+                    font-family: $ff2;
+                }
             }
-            @media (min-width: 321px) and (max-width: 376px) {
-                font-size: 2.25rem;
+        }
+        &__subtitle{
+            padding-left: 17rem;
+            @media (max-width: 575.98px) {
+                width: 90%;
+                margin: 0 auto;
+                padding-left: 0;
             }
             @media (min-width: 576px) and (max-width: 991.98px) {
-                font-size: 6rem;
-                line-height: 6rem;
+                padding-left: 12.5rem;
             }
-            @media (min-width: 992px) and (max-width: 1299.98px) {
+            h3{
+                text-transform: uppercase;
                 font-size: 8rem;
+                color: $white;
+                line-height: 8rem;
+                padding-bottom: 4rem;
+                @media (max-width: 575.98px) {
+                    font-size: 2.75rem;
+                    padding-bottom: 2.5rem;
+                    line-height: 3rem;
+                    padding-left: 5rem;
+                }
+                @media (max-width: 320px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    font-size: 6rem;
+                    line-height: 6rem;
+                }
+                @media (min-width: 992px) and (max-width: 1299.98px) {
+                    font-size: 8rem;
+                }
             }
-            span{
-                text-transform: lowercase;
-                font-family: $ff2;
+            &__tag{
+                @media (max-width: 575.98px) {
+                    padding-left: 0;
+                    padding-bottom: 2rem;
+                }
+                p{
+                    font-size: 1rem;
+                    font-family: $ff2;
+                    color: $lagoon;
+                    line-height: 2rem;
+                    @media (max-width: 575.98px) {
+                        line-height: 1.75rem;
+                    }
+                    span{
+                        color: $green;
+                    }
+                }
             }
         }
     }
-    &__below{
-        padding-left: 17rem;
+    &__cards{
+        padding: 6rem 0;
+        @include flexBetween;
+        flex-wrap: wrap;
         @media (max-width: 575.98px) {
-            width: 90%;
-            margin: 0 auto;
-            padding-left: 0;
+            padding: 2rem 0;
         }
-        @media (min-width: 576px) and (max-width: 991.98px) {
-            padding-left: 12.5rem;
-        }
-        h3{
-            text-transform: uppercase;
-            font-size: 9rem;
-            color: $white;
-            line-height: 8rem;
-            padding-bottom: 4rem;
+        &__single{
+            width: 19rem;
+            margin-bottom: 3rem;
             @media (max-width: 575.98px) {
-                font-size: 2.75rem;
-                padding-bottom: 2.5rem;
-                line-height: 3rem;
-                padding-left: 5rem;
-            }
-            @media (max-width: 320px) {
-                font-size: 2.25rem;
-            }
-            @media (min-width: 321px) and (max-width: 376px) {
-                font-size: 2.25rem;
+                width: 90%;
+                margin: 0 auto;
+                margin-bottom: 2rem;
             }
             @media (min-width: 576px) and (max-width: 991.98px) {
-                font-size: 6rem;
-                line-height: 6rem;
+                width: 13.5rem;
             }
             @media (min-width: 992px) and (max-width: 1299.98px) {
-                font-size: 8rem;
+                width: 19rem;
             }
-        }
-        &__tag{
-            @media (max-width: 575.98px) {
-                padding-left: 0;
-                padding-bottom: 2rem;
-            }
-            p{
-                font-size: 1rem;
+            span{
                 font-family: $ff2;
-                color: $lagoon;
-                line-height: 2rem;
+                font-size: 1.25rem;
+                color: $green;
+            }
+            .heartbit{
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0.75rem 0;
                 @media (max-width: 575.98px) {
-                    line-height: 1.75rem;
+                    
                 }
-                span{
-                    color: $green;
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    width: 100%;
+                }
+            }
+            ul{
+                @include flexBetween;
+                li{
+                    position: relative;
+                    p{
+                        font-size: 1rem;
+                    }
+                    a{
+                        text-transform: uppercase;
+                        font-size: 0.875rem;
+                        color: $white;
+                        img{
+                            width: 0.65rem;
+                            height: 0.65rem;
+                            margin-left: 0.5rem;
+                        }
+                    }
+                    h6{
+                        text-transform: uppercase;
+                        font-size: 0.875rem;
+                        color: $white;
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -0.35rem;
+                        left: 0;
+                        width: 100%;
+                        height: 0.045rem;
+                        background: $white;
+                    }
+                    &:first-child{
+                        &::after{
+                            display: none;
+                        }
+                    }
+                }
+                .reserved{
+                    h6{
+                        color: $lagoon;
+                        opacity: 0.75;
+                    }
+                    &::after{
+                        background: $lagoon;
+                        opacity: 0.75;
+                    }
                 }
             }
         }
