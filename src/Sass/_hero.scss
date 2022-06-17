@@ -12,7 +12,7 @@
         min-height: auto;
         padding-bottom: 6rem;
         background-image: none;
-        background-color: #0B2A2E;
+        background-color: #0A2D31;
     }
     @media (min-width: 576px) and (max-width: 991.98px) {
         background-image: url(../Image/background_img_sm.png);
@@ -134,7 +134,7 @@
             align-items: center;
         }
         &__left{
-            width: 38rem;
+            width: 40rem;
             @media (max-width: 575.98px) {
                 width: 100%;
                 padding-bottom: 3rem;
@@ -145,7 +145,7 @@
             h4{
                 font-size: 1rem;
                 color: $lagoon;
-                padding-left: 7rem;
+                padding-left: 15rem;
                 line-height: 1.75rem;
                 @media (max-width: 575.98px) {
                     padding-left: 0;

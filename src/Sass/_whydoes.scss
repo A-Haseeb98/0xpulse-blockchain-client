@@ -1,6 +1,7 @@
 .why{
     position: relative;
     min-height: 56rem;
+    overflow: hidden;
     .wrapper{
         @media (max-width: 575.98px) {
             width: 100%;
@@ -14,6 +15,7 @@
         }
     }
     &__upper{
+        position: relative;
         @include flexCenter;
         align-items: flex-end;
         padding: 10rem 0 4rem 0;
@@ -56,6 +58,38 @@
             span{
                 display: block;
                 color: $green;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 15rem;
+                left: -3rem;
+                width: 20rem;
+                height: 12rem;
+                background-image: url('../Image/bits.png');
+                @include bgCover;
+                z-index: -1;
+                @media (max-width: 575.98px) {
+                    top: 5.5rem;
+                    left: auto;
+                    right: -2rem;
+                    width: 12rem;
+                    height: 6rem;
+                }
+                @media (max-width: 320px) {
+                    width: 12rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    width: 12rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    top: 11rem;
+                    width: 16rem;
+                    height: 9rem;
+                }
+                @media (min-width: 992px) and (max-width: 1299.98px) {
+                    top: 13rem;
+                }
             }
         }
         &__right{
