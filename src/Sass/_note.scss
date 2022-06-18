@@ -1,4 +1,4 @@
-.auctor{
+.note{
     position: relative;
     overflow: hidden;
     padding-bottom: 3rem;
@@ -61,20 +61,16 @@
             }
             &::after{
                 content: '';
+                background-image: url('../Image/bits-lg.png');
                 position: absolute;
-                top: 9rem;
-                left: -2.5rem;
-                width: 20rem;
-                height: 12rem;
-                background-image: url('../Image/bits.png');
+                top: 1rem;
+                right: -2.5rem;
+                width: 42rem;
+                height: 24.5rem;
                 @include bgCover;
                 z-index: -1;
                 @media (max-width: 575.98px) {
-                    top: 10.5rem;
-                    left: auto;
-                    right: -2rem;
-                    width: 10rem;
-                    height: 6rem;
+                    display: none;
                 }
                 @media (max-width: 320px) {
                     right: -3rem;
@@ -89,15 +85,16 @@
                     height: 5rem;
                 }
                 @media (min-width: 576px) and (max-width: 991.98px) {
-                    top: 9.5rem;
-                    width: 16rem;
-                    height: 9rem;
+                    top: 6.5rem;
+                    width: 26rem;
+                    height: 13rem;
+                    right: -4rem;
                 }
                 @media (min-width: 1700px){
-                    top: 13rem;
-                    left: -3rem;
-                    width: 21rem;
-                    height: 12rem;
+                    top: 1rem;
+                    right: -3rem;
+                    width: 56rem;
+                    height: 31rem;
                 }
             }
         }
@@ -135,24 +132,6 @@
                     line-height: 7.5rem;
                 }
             }
-            p{
-                font-size: 1rem;
-                font-family: $ff2;
-                color: $lagoon;
-                padding: 3rem 0;
-                @media (max-width: 575.98px) {
-                    font-size: 1rem;
-                    line-height: 1.5rem;
-                }
-                @media (min-width: 576px) and (max-width: 991.98px) {
-                    font-size: 1.25rem;
-                    line-height: 2rem;
-                }
-                @media (min-width: 1700px){
-                    font-size: 1.25rem;
-                    line-height: 1.75rem;
-                }
-            }
         }
     }
     &__below{
@@ -168,6 +147,8 @@
             flex-direction: column;
         }
         &__left{
+            padding-top:  3rem;
+            padding-bottom: 7rem;
             width: 68%;
             padding-left: 17rem;
             @media (max-width: 575.98px) {
@@ -177,11 +158,10 @@
             }
             @media (min-width: 576px) and (max-width: 991.98px) {
                 width: 100%;
-                padding-left: 0;
+                padding-top:  5rem;
+                padding-left: 13rem;
             }
             p{
-                padding-top:  1.25rem;
-                border-top: 1px solid $lagoon;
                 font-size: 1rem;
                 font-family: $ff2;
                 color: $lagoon;
@@ -195,56 +175,14 @@
                     line-height: 1.75rem;
                 }
             }
-        }
-        &__right{
-            width: 23rem;
-            @media (max-width: 575.98px) {
-                width: 100%;
-            }
-            @media (min-width: 576px) and (max-width: 991.98px) {
-                width: 100%;
-                @include flexBetween;
-                align-items: flex-start;
-                padding: 4rem 0 3rem 0;
-            }
-            @media (min-width: 1700px){
-                width: 28rem;
-            }
-            p{
-                padding-top:  1.25rem;
-                border-top: 1px solid $lagoon;
-                font-size: 1rem;
+            h4{
+                font-size: 2.25rem;
                 font-family: $ff2;
                 color: $lagoon;
-                line-height: 1.5rem;
-                @media (min-width: 576px) and (max-width: 991.98px) {
-                    width: 47%;
-                    font-size: 1.25rem;
-                    line-height: 2rem;
-                }
-                @media (min-width: 1700px){
-                    font-size: 1.25rem;
-                    line-height: 1.75rem;
-                }
-            }
-        }
-        &__p{
-            width: 100%;
-            text-align: center;
-            @media (max-width: 575.98px) {
-                text-align: left;
-            }
-            p{
-                padding-top:  1.25rem;
-                font-size: 1rem;
-                font-family: $ff2;
-                color: $lagoon;
-                line-height: 1.5rem;
+                text-transform: uppercase;
+                padding: 3rem 0;
                 @media (max-width: 575.98px) {
-                    padding-top:  2rem;
-                }
-                @media (min-width: 576px) and (max-width: 991.98px) {
-                    font-size: 1.25rem;
+                    font-size: 1.75rem;
                     line-height: 2rem;
                 }
             }

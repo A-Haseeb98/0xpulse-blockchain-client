@@ -1,6 +1,10 @@
 import React from 'react';
+import bgXs from '../../Image/background_img_xs.png';
+import useWindowSize from '../../Utilities/Hooks/useWindowSize';
 
 const AboutHero = () => {
+    const { windowWidth } = useWindowSize();
+
     return (
             <>
                 <section className="about">
@@ -11,6 +15,12 @@ const AboutHero = () => {
                                 <h1><span>0x</span>PULSE</h1>
                             </div>
                         </div>
+
+                        {
+                            windowWidth < 575.98 ? <div className="hero__middle">
+                                <img src={bgXs} alt="bgXs" />
+                            </div> : null
+                        }
                     </div>
                 </section>
             </>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { pieces } from '../../Data/pieces.js';
-import linkIcon from '../../Image/icons/link.svg';
+import linkIcon from '../../Image/link.svg';
 import useWindowSize from '../../Utilities/Hooks/useWindowSize';
 
 const SixtyFour = () => {

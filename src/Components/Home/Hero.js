@@ -1,5 +1,6 @@
 import React from 'react';
-import linkIcon from '../../Image/icons/link.svg';
+import { Link } from 'react-router-dom';
+import linkIcon from '../../Image/link.svg';
 import bgXs from '../../Image/background_img_xs.png';
 import useWindowSize from '../../Utilities/Hooks/useWindowSize';
 
@@ -39,9 +40,9 @@ const Hero = () => {
                             <div className="hero__below__right">
                                 <ul>
                                     <li>
-                                        <a href="#more" target="_blank" rel="noopener noreferrer">Learn more
+                                        <Link to="/about">Learn more
                                             <img src={linkIcon} alt="link" />
-                                        </a>
+                                        </Link>
                                     </li>
                                 </ul>
                             </div>

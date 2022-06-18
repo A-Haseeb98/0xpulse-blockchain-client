@@ -1,5 +1,4 @@
 @import './variables';
-@import './loader';
 @import './header';
 @import './hero';
 @import './footer';
@@ -7,6 +6,7 @@
 @import './pieces';
 @import './about';
 @import './auctor';
+@import './note';
 @import './notFound';
 
 * {
@@ -127,10 +127,19 @@ a, select , input , textarea , button{
 
 .mt3{
     margin-top: 3rem;
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        margin-top: 0;
+    }
 }
 
 .mt8{
     margin-top: 8.5rem;
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        margin-top: 0;
+    }
+    @media (min-width: 992px) and (max-width: 1299.98px) {
+        margin-top: 7.75rem;
+    }
 }
 
 .b0{

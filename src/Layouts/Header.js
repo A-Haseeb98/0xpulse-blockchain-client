@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import linkIcon from '../Image/icons/link.svg';
+import linkIcon from '../Image/link.svg';
 
 const Header = () => {
     const [scroll, setScroll] = useState(false);

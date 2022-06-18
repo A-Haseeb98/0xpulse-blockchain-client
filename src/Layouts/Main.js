@@ -4,14 +4,13 @@ import ScrollToTop from './ScrollToTop';
 const Home = React.lazy(() => import("../Pages/Home/Home"));
 const About = React.lazy(() => import("../Pages/About/About"));
 const NotFound = React.lazy(() => import("../Pages/NotFound/NotFound"));
-const Loader = React.lazy(() => import("../Components/Loader/Loader"));
 
 const Main = () => {
     return (
         <>
             <main>
                 <ScrollToTop>
-                    <Suspense fallback={<Loader />}>
+                    <Suspense>
                         <Routes>
                             <Route path="/" element={<Home />} />
                             <Route path="/home" element={<Home />} />
