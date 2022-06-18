@@ -1,0 +1,216 @@
+.auctor{
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 3rem;
+    @media (min-width: 1700px){
+        padding-bottom: 7rem;
+    }
+    .wrapper{
+        @media (max-width: 575.98px) {
+            width: 100%;
+        }
+    }
+    .greenBg{
+        padding: 2rem 0;
+        background-color: #0B2A2E;
+        @media (min-width: 1600px) {
+            padding: 5rem 0;
+        }
+    }
+    &__upper{
+        position: relative;
+        padding: 9rem 0 0 0;
+        @media (max-width: 575.98px) {
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 5rem 0 0 0;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 7rem 0 4rem 0;
+        }
+        @media (min-width: 992px) and (max-width: 1299.98px) {
+            padding: 8rem 0 4rem 0;
+        }
+        h2{
+            text-transform: uppercase;
+            font-size: 4.6875rem;
+            color: $white;
+            line-height: 5rem;
+            @media (max-width: 575.98px) {
+                font-size: 2.5rem;
+                padding-bottom: 2.5rem;
+                line-height: 3rem;
+            }
+            @media (max-width: 320px) {
+                font-size: 2.25rem;
+            }
+            @media (min-width: 321px) and (max-width: 376px) {
+                font-size: 2.25rem;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                font-size: 6rem;
+                line-height: 6rem;
+            }
+            @media (min-width: 1700px){
+                font-size: 10rem;
+                line-height: 9rem;
+            }
+            span{
+                padding-left: 17rem;
+                display: block;
+                color: $green;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                top: 9rem;
+                left: -2.5rem;
+                width: 20rem;
+                height: 12rem;
+                background-image: url('../Image/bits.png');
+                @include bgCover;
+                z-index: -1;
+                @media (max-width: 575.98px) {
+                    top: 5.5rem;
+                    left: auto;
+                    right: -2rem;
+                    width: 12rem;
+                    height: 6rem;
+                }
+                @media (max-width: 320px) {
+                    width: 12rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    width: 12rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    top: 11rem;
+                    width: 16rem;
+                    height: 9rem;
+                }
+                @media (min-width: 992px) and (max-width: 1299.98px) {
+                    top: 13rem;
+                }
+                @media (min-width: 1700px){
+                    top: 16rem;
+                    left: -3rem;
+                    width: 25rem;
+                    height: 13rem;
+                }
+            }
+        }
+        &__top{
+            padding-left: 17rem;
+            h3{
+                text-transform: uppercase;
+                font-size: 4.6875rem;
+                line-height: 5rem;
+                color: $green;
+                @media (max-width: 575.98px) {
+                    font-size: 2.5rem;
+                    padding-bottom: 2.5rem;
+                    line-height: 3rem;
+                }
+                @media (max-width: 320px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    font-size: 6rem;
+                    line-height: 6rem;
+                }
+                @media (min-width: 1700px){
+                    font-size: 10rem;
+                    line-height: 9rem;
+                }
+            }
+            p{
+                font-size: 1rem;
+                font-family: $ff2;
+                color: $lagoon;
+                padding: 3rem 0;
+            }
+        }
+        &__right{
+            width: 20rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            p{
+                font-size: 1rem;
+                font-family: $ff2;
+                color: $lagoon;
+            }
+        }
+    }
+    &__below{
+        @include flexBetween;
+        align-items: flex-start;
+        @media (max-width: 575.98px) {
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            flex-direction: column;
+        }
+        &__left{
+            width: 68%;
+            padding-left: 17rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+                padding-left: 0;
+                padding-bottom: 2rem;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                width: 100%;
+                padding-left: 12.5rem;
+            }
+            p{
+                padding-top:  1.25rem;
+                border-top: 1px solid $white;
+                font-size: 1rem;
+                font-family: $ff2;
+                color: $lagoon;
+                line-height: 1.5rem;
+                @media (min-width: 1700px){
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+        &__right{
+            width: 23rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                width: 100%;
+                padding-left: 12.5rem;
+                padding-top: 1.75rem;
+            }
+            @media (min-width: 1700px){
+                width: 28rem;
+            }
+            p{
+                padding-top:  1.25rem;
+                border-top: 1px solid $white;
+                font-size: 1rem;
+                font-family: $ff2;
+                color: $lagoon;
+                line-height: 1.5rem;
+                @media (min-width: 1700px){
+                    font-size: 1.25rem;
+                    line-height: 1.75rem;
+                }
+            }
+        }
+    }
+}

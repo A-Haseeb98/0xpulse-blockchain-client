@@ -5,6 +5,8 @@
 @import './footer';
 @import './whydoes';
 @import './pieces';
+@import './about';
+@import './auctor';
 @import './notFound';
 
 * {
@@ -121,4 +123,16 @@ a, select , input , textarea , button{
     @media (min-width: 1400px){
         width: 95%;
     }
+}
+
+.mt3{
+    margin-top: 3rem;
+}
+
+.mt8{
+    margin-top: 8.5rem;
+}
+
+.b0{
+    border-top: 0 !important;
 }

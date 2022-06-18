@@ -1,0 +1,219 @@
+.about{
+    background-image: url(../Image/background_img.png);
+    @include bgCover;
+    position: relative;
+    min-height: 42.625rem;
+    .wrapper{
+        @media (max-width: 575.98px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 575.98px) {
+        min-height: auto;
+        padding-bottom: 6rem;
+        background-image: none;
+        background-color: #0A2D31;
+    }
+    @media (min-width: 576px) and (max-width: 991.98px) {
+        background-image: url(../Image/background_img_sm.png);
+    }
+    &__upper{
+        @include flexCenter;
+        min-height: 42.625rem;
+        padding-top: 15rem;
+        @media (max-width: 575.98px) {
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 8rem 0 0 0;
+        }
+        @media (min-width: 576px) and (max-width: 991.98px) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 7rem 0 10rem 0;
+        }
+        @media (min-width: 1700px){
+            padding: 11rem 0;
+        }
+        &__left{
+            width: 40rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            @media (min-width: 1700px){
+                width: 48rem;
+            }
+            h2{
+                text-transform: uppercase;
+                font-size: 4.6875rem;
+                color: $white;
+                padding-bottom: 3rem;
+                @media (max-width: 575.98px) {
+                    font-size: 2.5rem;
+                    padding-bottom: 3rem;
+                }
+                @media (max-width: 320px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    font-size: 2.25rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    padding-bottom: 3rem;
+                    font-size: 3.25rem;
+                }
+                @media (min-width: 1700px){
+                    font-size: 4.85rem;
+                }
+            }
+            h1{
+                font-size: 8.25rem;
+                color: $green;
+                line-height: 8rem;
+                @media (max-width: 575.98px) {
+                    font-size: 5.5rem;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    font-size: 7rem;
+                }
+                @media (min-width: 1700px){
+                    font-size: 10rem;
+                    line-height: 9rem;
+                }
+                @media (max-width: 320px) {
+                    font-size: 5rem;
+                }
+                @media (min-width: 321px) and (max-width: 376px) {
+                    font-size: 5rem;
+                }
+                span{
+                    font-family: $ff2;
+                }
+            }
+        }
+        &__right{
+            width: 20rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            @media (min-width: 1700px){
+                width: 25rem;
+            }
+            p{
+                font-size: 1rem;
+                font-family: $ff2;
+                color: $lagoon;
+                @media (min-width: 1700px){
+                    font-size: 1.25rem;
+                }
+            }
+            h4{
+                font-size: 1rem;
+                color: $lagoon;
+                padding-left: 7rem;
+                line-height: 1.75rem;
+                @media (max-width: 575.98px) {
+                    padding-left: 0;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+    &__middle{
+        display: none;
+        @media (max-width: 575.98px) {
+            display: block;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &__below{
+        @include flexBetween;
+        align-items: flex-end;
+        @media (max-width: 575.98px) {
+            width: 90%;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__left{
+            width: 40rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+                padding-bottom: 3rem;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                width: 32rem;
+            }
+            @media (min-width: 1700px){
+                width: 48rem;
+            }
+            h4{
+                font-size: 1rem;
+                color: $lagoon;
+                padding-left: 15rem;
+                line-height: 1.75rem;
+                @media (max-width: 575.98px) {
+                    padding-left: 0;
+                }
+                @media (min-width: 576px) and (max-width: 991.98px) {
+                    padding-left: 0;
+                }
+                @media (min-width: 1700px){
+                    font-size: 1.25rem;
+                    line-height: 2rem;
+                }
+            }
+            p{
+                font-size: 1rem;
+                font-family: $ff2;
+                color: $lagoon;
+            }
+        }
+        &__right{
+            width: 20rem;
+            @media (max-width: 575.98px) {
+                width: 100%;
+            }
+            @media (min-width: 576px) and (max-width: 991.98px) {
+                width: auto;
+            }
+            @media (min-width: 1700px){
+                width: 25rem;
+            }
+            ul{
+                @include flexBetween;
+                li{
+                    position: relative;
+                    @media (max-width: 575.98px) {
+                        margin-right: 3rem;
+                    }
+                    a{
+                        text-transform: uppercase;
+                        font-size: 1rem;
+                        color: $white;
+                        img{
+                            width: 0.75rem;
+                            height: 0.75rem;
+                            margin-left: 0.5rem;
+                            transform: rotate(90deg);
+                        }
+                    }
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -0.35rem;
+                        left: 0;
+                        width: 100%;
+                        height: 0.05rem;
+                        background: $white;
+                    }
+                }
+            }
+        }
+    }
+}
