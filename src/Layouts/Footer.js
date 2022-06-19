@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import licence from '../Image/licence.png';
+import license from '../Image/byNc.svg';
 import useWindowSize from '../Utilities/Hooks/useWindowSize';
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
                             <div className="footer__content__upper">
                                 <h4><span>0x</span>Pulse</h4>
                                 <p>This work is licensed under a Creative Commons <br /> Attribution-NonCommercial 4.0 International License.</p>
-                                <img src={licence} alt="licence" />
+                                <img src={license} alt="bync" />
                             </div> : 
                             <div className="footer__content__upper">
                                 <h4><span>0x</span>Pulse</h4>
@@ -28,7 +28,7 @@ const Footer = () => {
                             null : 
                             <div className="footer__content__middle">
                                 <p>This work is licensed under a Creative Commons <br /> Attribution-NonCommercial 4.0 International License.</p>
-                                <img src={licence} alt="licence" />
+                                <img src={license} alt="bync" />
                             </div>
                         }
                         

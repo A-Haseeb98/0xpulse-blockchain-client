@@ -16,7 +16,7 @@ const Header = () => {
            <header className={scroll ? "header fixed-header" : "header"} id="header">
                 <div className="wrapper">
                     <div className="header__nav">
-                        <Link to="/home">0xPulse</Link>
+                        <Link to="/home"><span>0x</span>Pulse</Link>
                         <ul>
                             <li>
                                 <a href="#twitter" target="_blank" rel="noopener noreferrer">TWITTER

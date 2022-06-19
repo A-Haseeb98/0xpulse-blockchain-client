@@ -31,6 +31,7 @@
 }
 
 .header__nav a {
+  text-transform: uppercase;
   font-size: 1.5rem;
   color: var(--white);
 }
@@ -39,6 +40,11 @@
   .header__nav a {
     font-size: 2rem;
   }
+}
+
+.header__nav a span {
+  font-family: "PT Mono", monospace;
+  text-transform: lowercase;
 }
 
 .header__nav ul {
@@ -108,7 +114,7 @@
 }
 
 .hero {
-  background-image: url(../Image/background_img.png);
+  background-image: url(../Image/background_img.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -127,13 +133,13 @@
     min-height: auto;
     padding-bottom: 6rem;
     background-image: none;
-    background-color: #0A2D31;
+    background-color: #0B2A2E;
   }
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .hero {
-    background-image: url(../Image/background_img_sm.png);
+    background-image: url(../Image/background_img_sm.svg);
   }
 }
 
@@ -150,7 +156,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 12rem 0;
+  padding: 11rem 0 12rem 0;
 }
 
 @media (max-width: 575.98px) {
@@ -183,7 +189,7 @@
 
 @media (min-width: 1700px) {
   .hero__upper {
-    padding: 11rem 0;
+    padding: 9rem 0 13rem 0;
   }
 }
 
@@ -199,12 +205,12 @@
 
 @media (min-width: 1700px) {
   .hero__upper__left {
-    width: 48rem;
+    width: 51rem;
   }
 }
 
 .hero__upper__left h1 {
-  font-size: 8.25rem;
+  font-size: 8.5rem;
   color: var(--green);
   line-height: 8rem;
 }
@@ -223,7 +229,7 @@
 
 @media (min-width: 1700px) {
   .hero__upper__left h1 {
-    font-size: 10rem;
+    font-size: 11rem;
     line-height: 9rem;
   }
 }
@@ -278,14 +284,14 @@
 
 @media (min-width: 1700px) {
   .hero__upper__left h2 {
-    font-size: 4.85rem;
+    font-size: 5.25rem;
   }
 }
 
 .hero__upper__left h2 span {
   text-align: right;
   display: block;
-  padding-right: 2rem;
+  padding-right: 1rem;
 }
 
 @media (max-width: 575.98px) {
@@ -320,6 +326,7 @@
 
 .hero__upper__right p {
   font-size: 1rem;
+  line-height: 1.75rem;
   font-family: "PT Mono", monospace;
   color: var(--lagoon);
 }
@@ -610,6 +617,11 @@
     font-size: 1rem;
     line-height: 1.5rem;
   }
+}
+
+.footer__content__middle img {
+  width: 4.875rem;
+  height: auto;
 }
 
 .footer__content ul {
@@ -1088,7 +1100,7 @@
 
 .pieces__upper__subtitle h3 {
   text-transform: uppercase;
-  font-size: 8rem;
+  font-size: 9rem;
   color: var(--white);
   line-height: 8rem;
   padding-bottom: 4rem;
@@ -1130,7 +1142,7 @@
 
 @media (min-width: 1700px) {
   .pieces__upper__subtitle h3 {
-    font-size: 10rem;
+    font-size: 11rem;
     line-height: 9rem;
   }
 }
@@ -1168,33 +1180,39 @@
 
 .pieces__cards {
   padding: 6rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .pieces__cards {
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
 }
 
 @media (max-width: 575.98px) {
   .pieces__cards {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -webkit-column-gap: 0;
+            column-gap: 0;
     padding: 2rem 0;
   }
 }
 
 .pieces__cards__single {
-  width: 19rem;
+  width: 20rem;
   margin-bottom: 3rem;
 }
 
 @media (min-width: 1700px) {
   .pieces__cards__single {
-    width: 25rem;
+    width: 26.5rem;
   }
 }
 
@@ -1318,12 +1336,12 @@
 }
 
 .about {
-  background-image: url(../Image/background_img.png);
+  background-image: url(../Image/background_img.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  min-height: 42.625rem;
+  min-height: 56rem;
 }
 
 @media (max-width: 575.98px) {
@@ -1332,24 +1350,18 @@
   }
 }
 
-@media (min-width: 1700px) {
-  .about .wrapper {
-    min-height: 56rem;
-  }
-}
-
 @media (max-width: 575.98px) {
   .about {
     min-height: auto;
     padding-bottom: 6rem;
     background-image: none;
-    background-color: #0A2D31;
+    background-color: #0B2A2E;
   }
 }
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .about {
-    background-image: url(../Image/background_img_sm.png);
+    background-image: url(../Image/background_img_sm.svg);
   }
 }
 
@@ -1363,15 +1375,14 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 42.625rem;
-  padding-top: 15rem;
+  padding-top: 26.5rem;
 }
 
 @media (max-width: 575.98px) {
   .about__upper {
     width: 90%;
     margin: 0 auto;
-    padding: 8rem 0 4rem 0;
+    padding: 8rem 0 3rem 0;
     min-height: auto;
   }
 }
@@ -1381,7 +1392,7 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    padding: 10rem 0 0 0;
+    padding-top: 15rem;
   }
 }
 
@@ -1409,9 +1420,9 @@
 
 .about__upper__left h2 {
   text-transform: uppercase;
-  font-size: 4.6875rem;
+  font-size: 5rem;
   color: var(--white);
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
 }
 
 @media (max-width: 575.98px) {
@@ -1436,7 +1447,7 @@
 @media (min-width: 576px) and (max-width: 991.98px) {
   .about__upper__left h2 {
     padding-bottom: 0;
-    font-size: 3.25rem;
+    font-size: 3.5rem;
   }
 }
 
@@ -1448,7 +1459,7 @@
 }
 
 .about__upper__left h1 {
-  font-size: 8.25rem;
+  font-size: 9rem;
   color: var(--green);
   line-height: 8rem;
 }
@@ -1461,7 +1472,7 @@
 
 @media (min-width: 576px) and (max-width: 991.98px) {
   .about__upper__left h1 {
-    font-size: 7rem;
+    font-size: 7.5rem;
   }
 }
 

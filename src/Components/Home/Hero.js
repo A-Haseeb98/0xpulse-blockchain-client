@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import linkIcon from '../../Image/link.svg';
-import bgXs from '../../Image/background_img_xs.png';
+import bgXs from '../../Image/background_img_xs.svg';
 import useWindowSize from '../../Utilities/Hooks/useWindowSize';
 
 const Hero = () => {
