@@ -124,7 +124,7 @@
         @media (min-width: 576px) and (max-width: 991.98px) {
             // @include flexBetween;
             // flex-wrap: wrap;
-        column-gap: 0;
+        // column-gap: 0;
         }
         @media (max-width: 575.98px) {
             grid-template-columns: repeat(1, 1fr);
@@ -132,10 +132,10 @@
             padding: 2rem 0;
         }
         &__single{
-            width: 20rem;
+            // width: 20rem;
             margin-bottom: 3rem;
             @media (min-width: 1700px){
-                width: 26.5rem;
+                // width: 26.5rem;
             }
             @media (max-width: 575.98px) {
                 width: 90%;
@@ -143,10 +143,10 @@
                 margin-bottom: 2rem;
             }
             @media (min-width: 576px) and (max-width: 991.98px) {
-                width: 13.5rem;
+                // width: 13.5rem;
             }
             @media (min-width: 992px) and (max-width: 1299.98px) {
-                width: 19rem;
+                // width: 19rem;
             }
             span{
                 font-family: $ff2;
