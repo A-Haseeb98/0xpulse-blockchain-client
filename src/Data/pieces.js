@@ -1,147 +1,376 @@
-import one from '../Image/1.jpg';
-import two from '../Image/2.jpg';
-import three from '../Image/3.jpg';
-import four from '../Image/4.jpg';
-import five from '../Image/5.jpg';
-import six from '../Image/6.jpg';
-import seven from '../Image/7.jpg';
-import eight from '../Image/8.jpg';
-import nine from '../Image/9.jpg';
-import ten from '../Image/10.jpg';
-import eleven from '../Image/11.jpg';
-import twelve from '../Image/12.jpg';
-import thirteen from '../Image/13.jpg';
-import fourteen from '../Image/14.jpg';
-import fifteen from '../Image/15.jpg';
-import sixteen from '../Image/16.jpg';
-
 export const pieces = [
     {
-        no: 1,
-        title: 'd',
-        image: one,
-        price: '3Ξ',
-        link: '#buy-now-d',
-        reserved: false,
-    },
-    {
-        no: 2,
-        title: '3',
-        image: two,
-        price: '3Ξ',
-        link: '#buy-now-3',
-        reserved: false,
-    },
-    {
-        no: 3,
-        title: '7',
-        image: three,
-        price: '3Ξ',
-        link: '#buy-now-7',
-        reserved: false,
-    },
-    {
-        no: 4,
+        tokenId: 1,
         title: 'e',
-        image: four,
         price: '3Ξ',
-        link: '#buy-now-e',
         reserved: false,
     },
     {
-        no: 5,
-        title: '5',
-        image: five,
+        tokenId: 2, title: 'e',
         price: '3Ξ',
-        link: '#buy-now-5',
         reserved: false,
     },
     {
-        no: 6,
-        title: '6',
-        image: six,
-        price: '3Ξ',
-        link: '#buy-now-6',
-        reserved: false,
-    },
-    {
-        no: 7,
-        title: '2',
-        image: seven,
-        price: '3Ξ',
-        link: '#buy-now-2',
-        reserved: false,
-    },
-    {
-        no: 8,
-        title: 'a',
-        image: eight,
-        price: '3Ξ',
-        link: '#buy-now-a',
-        reserved: false,
-    },
-    {
-        no: 9,
-        title: '8',
-        image: nine,
-        price: '3Ξ',
-        link: '#buy-now-8',
-        reserved: false,
-    },
-    {
-        no: 10,
-        title: '6',
-        image: ten,
-        price: '3Ξ',
-        link: '#buy-now-6',
-        reserved: false,
-    },
-    {
-        no: 11,
-        title: '3',
-        image: eleven,
-        price: '3Ξ',
-        link: '#buy-now-3',
-        reserved: false,
-    },
-    {
-        no: 12,
-        title: 'c',
-        image: twelve,
-        price: '3Ξ',
-        link: '#buy-now-c',
-        reserved: false,
-    },
-    {
-        no: 13,
-        title: '5',
-        image: thirteen,
-        price: '3Ξ',
-        link: '#buy-now-5',
-        reserved: true
-    },
-    {
-        no: 14,
+        tokenId: 3,
         title: 'e',
-        image: fourteen,
         price: '3Ξ',
-        link: '#buy-now-e',
-        reserved: true
+        reserved: false,
+
     },
     {
-        no: 15,
-        title: '1',
-        image: fifteen,
+        tokenId: 4, title: 'e',
         price: '3Ξ',
-        link: '#buy-now-1',
-        reserved: true
+        reserved: false,
     },
     {
-        no: 16,
-        title: '0',
-        image: sixteen,
+        tokenId: 5, title: 'e',
         price: '3Ξ',
-        link: '#buy-now-0',
-        reserved: true
+        reserved: false,
+    },
+    {
+        tokenId: 6, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 7, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 8, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 9, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 10, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 11, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 12, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 13, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 14, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 15, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 16, title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 17,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 18,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 19,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+
+    },
+    {
+        tokenId: 20,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 21,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 22,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 23,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 24,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 25,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 26,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 27,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 28,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 29,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 30,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 31,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 32,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 33,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 34,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 35,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+
+    },
+    {
+        tokenId: 36,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 37,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 38,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 39,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 40,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 41,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 42,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 43,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 44,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 45,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 46,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 47,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 48,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 49,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 50,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 51,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+
+    },
+    {
+        tokenId: 52,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 53,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 54,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 55,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 56,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 57,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 58,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 59,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 60,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 61,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 62,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 63,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
+    },
+    {
+        tokenId: 64,
+        title: 'e',
+        price: '3Ξ',
+        reserved: false,
     }
 ]

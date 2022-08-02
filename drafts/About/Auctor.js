@@ -13,12 +13,12 @@ const Auctor = () => {
                 <div className="wrapper">
                     <div className="auctor__upper">
                         {
-                            windowWidth > 576 ?  <h2>Auctor, Notitiam and</h2> :  <h2>Auctor, <br /> Notitiam and</h2>
+                            windowWidth > 576 ?  <h2>Infinite, Unique and</h2> :  <h2>Infinite, <br /> Unique and</h2>
                         }
                         <div className="auctor__upper__top">
                             
                             {
-                                windowWidth > 576 ?  <h3>praeveniri at reverti</h3> :  <h3>praeveniri <br /> at reverti</h3>
+                                windowWidth > 576 ?  <h3>Impossible to predice</h3> :  <h3>Impossible <br /> to predict</h3>
                             }
                             {
                                 windowWidth > 576 ?  <p>Quae te hic 64 moriar te est firmissime ut <br /> zelose, sufficit sed meritorius mi docebit.</p> : <p>Quae te hic 64 moriar te est firmissime ut zelose, sufficit sed meritorius mi docebit.</p>

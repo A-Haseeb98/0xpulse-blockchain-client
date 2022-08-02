@@ -19,12 +19,7 @@ const Header = () => {
                         <Link to="/home"><span>0x</span>Pulse</Link>
                         <ul>
                             <li>
-                                <a href="#twitter" target="_blank" rel="noopener noreferrer">TWITTER
-                                    <img src={linkIcon} alt="link" />
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#connect" target="_blank" rel="noopener noreferrer">CONNECT
+                                <a href="#connect" target="_blank" rel="noopener noreferrer">MARKETPLACE
                                     <img src={linkIcon} alt="link" />
                                 </a>
                             </li>

@@ -1,5 +1,5 @@
 .about{
-    background-image: url(../Image/background_img.svg);
+    // background-image: url(../Image/background_img.svg);
     @include bgCover;
     position: relative;
     min-height: 56rem;
@@ -15,7 +15,7 @@
         background-color: #0B2A2E;
     }
     @media (min-width: 576px) and (max-width: 991.98px) {
-        background-image: url(../Image/background_img_sm.svg);
+        // background-image: url(../Image/background_img_sm.svg);
     }
     &__upper{
         @include flexCenter;

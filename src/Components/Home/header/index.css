@@ -1,0 +1,54 @@
+.navbar_container_wrapper {
+    background: linear-gradient(0deg, #0B1C29, #0B1C29), #0A2F2F;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.right_nav {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+
+}
+
+.right_nav a {
+
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29.05px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+.left_nav span {
+    font-family: 'PT Mono', monospace;
+    line-height: 26.88px;
+}
+
+
+.right_nav img {
+    margin-left: 10px;
+}
+
+.left_nav a {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24.67px;
+    letter-spacing: -0.045em;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 1440px) {
+
+    
+}
