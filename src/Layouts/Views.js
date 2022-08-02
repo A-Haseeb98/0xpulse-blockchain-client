@@ -6,7 +6,7 @@ import Main from './Main';
 const Views = () => {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <Main />
             <Footer />
         </>

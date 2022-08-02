@@ -1,3 +1,15 @@
+@media (min-width: 2024px) and (max-width: 6020px) {
+    .cover_wrapper {
+        padding-top: 5% !important;
+    }
+}
+
+@media (min-width: 4024px) and (max-width: 6020px) {
+    .cover_wrapper {
+        padding-top: 3% !important;
+    }
+}
+
 @font-face {
     font-family: 'PT Mono';
     src: url(../../../Image/Font/pt\ mono\ regular.ttf);
@@ -6,7 +18,7 @@
 .cover_wrapper {
     /* background-color: #041524; */
     background: linear-gradient(0deg, #0B1C29, #0B1C29), #0A2F2F;
-    padding-top: 16px;
+    padding-top: 86px;
     padding-bottom: 15px;
 }
 
@@ -117,6 +129,12 @@
 @media screen and (max-width: 1360px) {
     .cover_content_new h1 {
         font-size: 140px;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .cover_wrapper {
+        padding-top: 105px;
     }
 }
 
@@ -232,6 +250,7 @@
         padding: 0 50px;
         text-align: center;
     }
+
     .cover_content_new h1 {
         margin-bottom: 10px;
     }

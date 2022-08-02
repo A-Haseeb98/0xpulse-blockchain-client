@@ -14,7 +14,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       {
         windowWidth > 895.98 ?
           <Cover />
