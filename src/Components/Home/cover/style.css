@@ -4,9 +4,9 @@
     }
 }
 
-@media (min-width: 4024px) and (max-width: 6020px) {
+@media (min-width: 4024px) and (max-width: 8020px) {
     .cover_wrapper {
-        padding-top: 3% !important;
+        padding-top: 4% !important;
     }
 }
 
