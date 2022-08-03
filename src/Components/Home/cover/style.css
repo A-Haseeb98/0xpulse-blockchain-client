@@ -35,6 +35,8 @@
     text-transform: uppercase;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+    margin-bottom: 1vw;
+
 }
 
 .cover_content_new h1 span {
@@ -58,13 +60,12 @@
     padding-left: 0.65vw;
     color: #FFFFFF;
     /* padding-top: 13px; */
-    padding-top: 0.84vw;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
 
 .cover_content_new p {
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     /* font-size: 16px !important; */
@@ -73,7 +74,7 @@
     color: rgba(255, 255, 255, 0.9);
     margin-top: 8vw;
     /* margin-top: 123px; */
-    max-width: 383px;
+    /* max-width: 383px; */
     max-width: 24.93vw;
     /* padding-left: 10px; */
     padding-top: 0.84vw;
@@ -99,8 +100,8 @@
 
 .bottom_text_p {
     position: absolute;
-    /* bottom: 87px; */
-    bottom: 5.66vw;
+    /* bottom: 100px; */
+    bottom: 6.5vw;
     width: 100%;
     text-align: center;
     left: 0;
