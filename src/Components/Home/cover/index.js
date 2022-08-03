@@ -1,5 +1,7 @@
 import "./style.css"
-import img from "../../../Image/Font/sss.svg"
+// import img from "../../../Image/Font/sss.svg"
+import img from "../../../Image/background_img2.svg"
+
 
 function Cover() {
     return (

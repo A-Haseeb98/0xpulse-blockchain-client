@@ -4,7 +4,9 @@
     /* padding-top: 86px;
     padding-bottom: 15px; */
     padding-top: 5.598958333333333vw;
-    padding-bottom: 0.97vw;
+    /* padding-bottom: 0.97vw; */
+    clip-path: inset(0 0 30px 0);
+
 }
 
 .Cover_container_new {
@@ -16,6 +18,7 @@
     position: relative;
     /* padding: 0 148px; */
     padding: 0 9.635416666666666vw;
+
 }
 
 .cover_content_new {
@@ -28,7 +31,7 @@
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 10.416vw;
+    font-size: 10.59vw;
     line-height: 90%;
     letter-spacing: -0.07em;
     color: #58C52A;
@@ -54,7 +57,7 @@
     font-style: normal;
     font-weight: 400;
     /* font-size: 20px; */
-    font-size: 1.30vw;
+    font-size: 1.35vw;
     line-height: 140%;
     /* padding-left: 10px; */
     padding-left: 0.65vw;
@@ -69,7 +72,7 @@
     font-style: normal;
     font-weight: 400;
     /* font-size: 16px !important; */
-    font-size: 1.04vw !important;
+    font-size: 1.05vw !important;
     line-height: 154.19%;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 8vw;
@@ -85,7 +88,7 @@
 .image_container_cover {
     width: 60%;
     /* padding-top: 92px; */
-    padding-top: 5.98vw;
+    padding-top: 4.8vw;
     transition: all 0.3s ease-in-out;
 
 }
@@ -101,7 +104,7 @@
 .bottom_text_p {
     position: absolute;
     /* bottom: 100px; */
-    bottom: 6.5vw;
+    bottom: 8.5vw;
     width: 100%;
     text-align: center;
     left: 0;
