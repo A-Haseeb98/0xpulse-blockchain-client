@@ -5,7 +5,7 @@
     padding-bottom: 15px; */
     padding-top: 5.598958333333333vw;
     /* padding-bottom: 0.97vw; */
-    clip-path: inset(0 0 12px 0);
+    clip-path: inset(0 0 5px 0);
 
 }
 
@@ -106,7 +106,7 @@
 .bottom_text_p {
     position: absolute;
     /* bottom: 100px; */
-    bottom: 8vw;
+    bottom: 9vw;
     width: 100%;
     text-align: center;
     left: 0;
